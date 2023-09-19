@@ -1,4 +1,4 @@
-# payAPI Landing Page:
+# payAPI Multi-Landing Page:
 
 ![Application Screenshot](src/assets/assets/app-screenshot.png)
 
