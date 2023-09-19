@@ -1,34 +1,18 @@
-# payAPI Applications Todo List:
+# payAPI Landing Page:
 
-- Home page Progress:
-    - [x] Finished the home page hero.
-    - [x] Finished the 'Who we work with' section.
-    - [x] Finished the 'east to implement' section.
-    - [x] Need to build the 'Simple UI UX' section.
-    - [x] Need to build the 'icons' section.
-    - [x] Need to build the 'cta' section.
-    - [x] Need to build the App Footer.
-    - [x] Implement the App Footer in the layout of the app.
-    - [x] Implement framer-motion.
-    - [x] Implement responsiveness.
+![Application Screenshot](src/assets/assets/app-screenshot.png)
 
+## Description
 
-- Pricing Page Progress:
-    - [x] Build json file for pricing data.
-    - [x] Build PlanItem Component.
-    - [x] Finish styling.
-    - [x] Implement framer-motion.
-    - [x] Implement responsiveness.
+This app is a showcase for a frontend project, using React, Typescript and react-router-dom.
 
+This project is meant to be a landing page for a payment API, where the user can see the different features of the API,
+and also can subscribe to the service (API functionalities not implemented).
 
-- About Page Progress:
-    - [x] Build the page.
-    - [x] Implement framer-motion.
-    - [x] Implement responsiveness.
+## Installation
+run `npm install` to install all the dependencies.
 
+## Usage
+run `npm start` to start the app in development mode.
 
-- Contact Page Progress:
-    - [x] Build the page.
-    - [x] Implement framer-motion.
-    - [ ] Implement responsiveness.
-  
+# Enjoy :)
