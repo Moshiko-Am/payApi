@@ -1,0 +1,46 @@
+// Mix Variables:
+// - Backgrounds:
+$background-opacity: 0.25;
+$background-tertiary: #979797;
+$background-primary: #edf3f8;
+$background-secondary: #36536b;
+
+
+// System Color Maps:
+$colors: (
+	'primary': (
+		'pink': #ba4270,
+		'white': #fbfcfe,
+	),
+	'secondary': (
+		'juan-blue': #36536b,
+		'mirage-blue': #1b262f,
+		'light-juan-blue': #6c8294,
+		'pink': #da6d97,
+		'white': #aeaeae,
+	),
+	'background': (
+		'primary': #edf3f8,
+		'secondary': #36536b,
+		'tertiary': #979797,
+	),
+);
+
+:root {
+	@each $map, $values in $colors {
+		@each $key, $value in $values {
+			--#{$map}-#{$key}: #{$value};
+		}
+	}
+}
+
+$primary-pink: #ba4270;
+$primary-white: #fbfcfe;
+$secondary-white: #d9d9d9;
+$secondary-juan-blue: #36536b;
+$secondary-mirage-blue: #1b262f;
+$secondary-light-juan-blue: #6c8294;
+$secondary-pink: #da6d97;
+$background-primary: #edf3f8;
+$background-secondary: #36536b;
+$background-tertiary: #797979;

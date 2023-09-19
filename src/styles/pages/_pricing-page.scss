@@ -1,0 +1,47 @@
+.pricing-page {
+	padding-inline: $app-inline-padding;
+	padding-block: $app-block-padding;
+
+	@include ball-after;
+
+	&__title-container {
+		padding-block-end: $app-block-padding;
+	}
+
+	&__plans-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 350px);
+		justify-content: space-between;
+		grid-gap: 1rem;
+	}
+	&__page-cta {
+		.home-page-cta {
+			justify-content: space-between;
+			padding-inline: 0;
+
+			&__hero-cta-container {
+				width: 600px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.pricing-page {
+		&__plans-container {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.pricing-page {
+		&__plans-container {
+			grid-template-columns: 1fr;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+	}
+}

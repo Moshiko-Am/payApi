@@ -1,0 +1,113 @@
+{
+  "pageTitle": "Pricing",
+  "pageSections": [
+    {
+      "id": 1,
+      "sectionTitle": "Free Plan",
+      "sectionDescription": "Build and test using our core set of products with up to 100 API requests",
+      "sectionPrice": "$0.00",
+      "sectionFeatures": [
+        {
+          "label": "Transactions",
+          "isChecked": true
+        },
+        {
+          "label": "Auth",
+          "isChecked": true
+        },
+        {
+          "label": "Identity",
+          "isChecked": true
+        },
+        {
+          "label": "Investments",
+          "isChecked": false
+        },
+        {
+          "label": "Assets",
+          "isChecked": false
+        },
+        {
+          "label": "Liabilities",
+          "isChecked": false
+        },
+        {
+          "label": "Income",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sectionTitle": "Basic Plan",
+      "sectionDescription": "Launch your project with unlimited requests and no contractual minimums",
+      "sectionPrice": "$249.00",
+      "sectionFeatures": [
+        {
+          "label": "Transactions",
+          "isChecked": true
+        },
+        {
+          "label": "Auth",
+          "isChecked": true
+        },
+        {
+          "label": "Identity",
+          "isChecked": true
+        },
+        {
+          "label": "Investments",
+          "isChecked": true
+        },
+        {
+          "label": "Assets",
+          "isChecked": true
+        },
+        {
+          "label": "Liabilities",
+          "isChecked": false
+        },
+        {
+          "label": "Income",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sectionTitle": "Premium Plan",
+      "sectionDescription": "Get tailored solutions, volume pricing, and dedicated support for your team",
+      "sectionPrice": "$499.00",
+      "sectionFeatures": [
+        {
+          "label": "Transactions",
+          "isChecked": true
+        },
+        {
+          "label": "Auth",
+          "isChecked": true
+        },
+        {
+          "label": "Identity",
+          "isChecked": true
+        },
+        {
+          "label": "Investments",
+          "isChecked": true
+        },
+        {
+          "label": "Assets",
+          "isChecked": true
+        },
+        {
+          "label": "Liabilities",
+          "isChecked": true
+        },
+        {
+          "label": "Income",
+          "isChecked": true
+        }
+      ]
+    }
+  ]
+}

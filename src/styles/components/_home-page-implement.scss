@@ -1,0 +1,52 @@
+.home-page-implement {
+	padding-inline: $app-inline-padding;
+	padding-block-start: $app-block-padding;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	&__image-wrapper {
+		width: 50%;
+	}
+
+	&__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+
+		p {
+			width: 445px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.home-page-implement {
+		padding-block: $app-block-padding;
+		flex-direction: column;
+
+		&__text-wrapper {
+			align-items: center;
+			text-align: center;
+
+			p {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.home-page-implement {
+		&__image-wrapper {
+			width: 100%;
+		}
+
+		&__text-wrapper {
+			h2 {
+				font-size: 36px;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+// Styles variables:
+$app-inline-padding: 10%;
+$app-inline-padding-strong: 15%;
+$app-block-padding: 50px;
+$app-header-height: 80px;
+
+
+$border-radius-primary: 24px;
+$border-radius-secondary: 8px;
+$border-radius-round: 50%;
+
+:root {
+	--app-header-height: #{$app-header-height};
+}

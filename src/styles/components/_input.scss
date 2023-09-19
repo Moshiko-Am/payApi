@@ -1,0 +1,18 @@
+.input {
+	$input-border-color: var(--secondary-juan-blue);
+
+	&__wrapper {
+		display: inline-block;
+		padding: 1rem;
+		box-shadow: 0 1px 0 0px $input-border-color;
+	}
+
+	&__input {
+		border: none;
+		outline: none;
+
+		&::placeholder {
+			color: var(--secondary-juan-blue);
+		}
+	}
+}

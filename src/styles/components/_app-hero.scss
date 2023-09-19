@@ -1,0 +1,133 @@
+.app-hero {
+	padding-inline: $app-inline-padding;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: -50%;
+		right: -15%;
+		border-radius: $border-radius-round;
+		width: 55%;
+		aspect-ratio: 1;
+		z-index: -1;
+		@include background-opacity($background-tertiary, $background-opacity);
+	}
+
+	&__cta-wrapper {
+		width: 540px;
+		//flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__image-container {
+		//flex: 2;
+	}
+
+	&__hero-header-container {
+		width: 100%;
+	}
+
+	&__hero-cta-container {
+		width: 85%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		margin-block: 2rem 0.5rem;
+		box-shadow: 0 0 20px rgba(black, 0.1);
+		border-radius: $border-radius-primary;
+
+		.input {
+			&__wrapper {
+				box-shadow: unset;
+				flex: 1;
+				padding: 0 0 0 2rem;
+			}
+
+			&__input {
+				width: 100%;
+				font-weight: 700;
+				color: var(--secondary-juan-blue);
+
+				&::placeholder {
+					color: var(--secondary-light-juan-blue);
+				}
+			}
+		}
+	}
+
+	&__hero-contact-container {
+		padding-inline-start: 2rem;
+		color: var(--secondary-juan-blue);
+
+		a {
+			font-weight: 700;
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	.app-hero {
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		padding-block: $app-block-padding;
+
+		&__cta-wrapper {
+			width: 90%;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.app-hero {
+
+		&::after {
+			top: -75%;
+			width:120%;
+		}
+
+		&__hero-cta-container {
+			width: 100%;
+			margin-block: 2rem 0;
+		}
+
+		&__hero-cta-container {
+			flex-direction: column;
+			gap: 1rem;
+			background-color: transparent;
+			box-shadow: unset;
+			align-items: stretch;
+
+			.input {
+				&__wrapper,
+				&__input {
+					height: 100%;
+					background-color: var(--primary-white);
+					padding-block: 10px;
+					border-radius: $border-radius-primary;
+				}
+
+			}
+
+		}
+
+		&__hero-contact-container {
+			padding-block: 1rem;
+		}
+
+		&__hero-header-container {
+			h1 {
+				font-size: 32px;
+				line-height: 40px;
+			}
+		}
+	}
+}

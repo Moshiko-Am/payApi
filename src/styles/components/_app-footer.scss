@@ -1,0 +1,71 @@
+.app-footer {
+	padding-inline: $app-inline-padding;
+	height: $app-header-height;
+	background-color: var(--secondary-mirage-blue);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 60%;
+		height: 1500%;
+		top: -500%;
+		right: -40%;
+		background-color: darken($secondary-juan-blue, 12%);
+		border-radius: $border-radius-round;
+		z-index: -1;
+	}
+
+	&__links-container {
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+	}
+
+	&__link-text {
+		color: var(--secondary-white);
+		transition: all 250ms ease-in-out;
+
+		&:hover {
+			color: var(--primary-white);
+		}
+	}
+
+	&__social-container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__icon {
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 850px) {
+	.app-footer {
+
+		&__links-container {
+			gap: 2rem;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.app-footer {
+		flex-direction: column;
+		padding-block: 2rem;
+		height: fit-content;
+		gap: 2rem;
+
+		&__links-container {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+}
